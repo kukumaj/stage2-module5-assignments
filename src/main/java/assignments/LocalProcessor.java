@@ -19,12 +19,12 @@ public class LocalProcessor {
     private String processorName;
     private Long period = 10000000000000L;
     protected StringBuilder processorVersion;
-    private Integer valueofCheap;
+    private Integer valueOfCheap;
     private Scanner informationScanner;
     private List<String> stringArrayList;
 
     @ListIteratorAnnotation
-    public void listiterator(List<String> stringList) {
+    public void listIterator(List<String> stringList) {
         stringList.stream().filter(Objects::nonNull)
                 .mapToInt(Objects::hashCode)
                 .forEach(System.out::println);
